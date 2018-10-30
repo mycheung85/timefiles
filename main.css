@@ -1,0 +1,91 @@
+body {
+  background: white url(mrmen-clock.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+
+}
+
+.clock {
+  margin-top: 15%;
+  position: relative;
+
+}
+
+/* .clock::after {
+  background: #000;
+  border-radius: 90%;
+  content: "";
+  position: absolute;
+  left: 45%;
+  top: 14%;
+  transform: translate(-45%, -45%);
+  width: 5%;
+  height: 4%;
+  z-index: 13;
+} */
+
+.clock-face {
+  display: block;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 19px auto;
+  background: whitesmoke;
+  border-radius: 150px;
+  border: 10px solid black;
+}
+
+.hand {
+  width: 50%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+.hour-hand {
+  height: 8px;
+  width: 45%;
+  border-radius: 8px;   
+}
+
+.min-hand { 
+  height: 5px;
+  width: 48%;
+  border-radius: 8px;
+}
+
+.second-hand {
+  background: red;
+  height: 2px;
+  width: 49%;
+}
+
+.digital-clock {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  background: none;
+  border: 10px solid black;
+  border-radius: 32px;
+  color: black;
+  font-size: 65px;
+  font-family: Orbitron;
+  letter-spacing: 10px;
+  padding: 30px 30px;
+}
+
