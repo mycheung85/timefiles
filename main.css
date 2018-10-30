@@ -24,9 +24,9 @@ body {
   border-radius: 90%;
   content: "";
   position: absolute;
-  left: 45%;
-  top: 14%;
-  transform: translate(-45%, -45%);
+  left: 47%;
+  top: 21%;
+  transform: translate(-31%, -45%);
   width: 5%;
   height: 4%;
   z-index: 13;
