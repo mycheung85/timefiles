@@ -31,9 +31,7 @@ function getDigital() {
     seconds = "0" + seconds;
   };
   let minutes = time.getMinutes();
-  if(minutes < 10) {
-    minutes = "0"+ minutes
-  }
+
   let hour = time.getHours() % 12;
   
   let nightOrDay = hour <= 12 ? 'PM' : 'AM'; 
