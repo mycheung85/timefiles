@@ -35,9 +35,7 @@ function getDigital() {
     minutes = "0"+ minutes
   }
   let hour = time.getHours() % 12;
-  if(hour < 12) {
-    hour = "0" + hour
-  }
+  
   let nightOrDay = hour <= 12 ? 'PM' : 'AM'; 
 
   digital.textContent = `${hour}:${minutes}:${seconds}:${nightOrDay}` 
