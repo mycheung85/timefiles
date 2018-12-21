@@ -28,7 +28,7 @@ function getDigital() {
   const seconds = time.getSeconds();
   const minutes = time.getMinutes();
   const hour = time.getHours() % 12;
-  let nightOrDay = hour <= 12 ? 'AM' : 'PM'; 
+  let nightOrDay = hour <= 12 ? 'PM' : 'AM'; 
 
   digital.textContent = `${hour}:${minutes}:${seconds}:${nightOrDay}` 
 }
