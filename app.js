@@ -25,9 +25,19 @@ const digital = document.getElementById('digitalclock')
 
 function getDigital() {
   const time = new Date();
-  const seconds = time.getSeconds();
-  const minutes = time.getMinutes();
-  const hour = time.getHours() % 12;
+  let seconds = time.getSeconds()
+  if(seconds < 10) {
+    // console.log('0' + seconds);
+    seconds = "0" + seconds;
+  };
+  let minutes = time.getMinutes();
+  if(minutes < 60) {
+    minutes = "0"+ minutes
+  }
+  let hour = time.getHours() % 12;
+  if(hour < 12) {
+    hour = "0" + hour
+  }
   let nightOrDay = hour <= 12 ? 'PM' : 'AM'; 
 
   digital.textContent = `${hour}:${minutes}:${seconds}:${nightOrDay}` 
